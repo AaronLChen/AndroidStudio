@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.view.WindowManager;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by chenl on 3/31/2017.
@@ -26,6 +27,7 @@ public class ForceOfflineReceiver extends BroadcastReceiver {
                 context.startActivity(intent); //重启LoginActivity
             }
         });
+
         AlertDialog alertDialog = dialogBuilder.create();
         //需要设置AlertDialog的类型，保证在广播接收器中可以正常弹出
         alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
