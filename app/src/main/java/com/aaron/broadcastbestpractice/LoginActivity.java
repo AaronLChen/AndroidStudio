@@ -34,7 +34,7 @@ public class LoginActivity extends BaseActivity {
         rememberPass = (CheckBox) findViewById(R.id.remember_pass);
 
         pref = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean isRemember = pref.getBoolean("remeber_password", false);
+        boolean isRemember = pref.getBoolean("remember_password", false);
         if (isRemember) {
             //将账号和密码都设置到文本框中
             String account = pref.getString("account", "");
